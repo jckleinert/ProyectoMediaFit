@@ -1,0 +1,472 @@
+body{
+    background-color: #0f1015;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+
+#contenedor-total{
+    position: relative;
+    min-height: 100vh;
+}
+
+footer{
+    background-color: #1a1919;
+    /*position: absolute; */
+    font-size: 13px;
+    font-weight: lighter;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 10px;
+}
+.footer__menu{
+    padding: 1rem;
+}
+.footer__link{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__link a{
+    font-weight: 500;
+}
+
+.footer__link a:hover{
+    color: #757474;
+}
+h5{
+    font-size: 13px;
+    font-weight: 600;
+    color: #d3e82b;
+    margin-top: 0%;
+    margin-block-end: 1.67em;
+}
+
+main{
+    text-align: center;
+    padding-bottom: 20px;   
+}
+
+header{
+    background-color: #1a1919;
+    padding-top: 0.5rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+ul{
+    list-style-type: none;
+    display: inline;    
+}
+
+
+.redes{
+    padding: 1rem;
+}
+
+h2{
+    color: #d3e82b;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.fondo__index{
+    background-image: url(../Imagenes/wallpaperbetter.com_1920x1080.jpg);
+    padding: 1%;
+    background-repeat: space;
+    background-attachment: fixed;
+}
+
+.fondo__staff{
+    background-image: url(../Imagenes/Fondo-gimnasio.jpg);
+    background-repeat: space;
+    padding: 1%;
+    background-attachment: fixed;
+}
+
+.fondo__planes{
+    background-image: url(../Imagenes/Fondos.jpg);
+    background-repeat: space;
+    padding: 1%;
+    background-attachment: fixed;
+}
+
+.intro{
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    margin-left: 50%;
+    text-align: left;
+}
+
+nav{
+    background-color: #1a1919;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+nav a.logo{
+    position: absolute;
+}
+nav a.logo img{
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+#navegador{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2%;
+    
+}
+#navegador div a{
+    display: block;
+    padding: 10px;
+    font-weight: 600;
+}
+
+#navegador div a:hover{
+    background-color: #242424;
+    color: white;
+    text-decoration: none;
+}
+
+#navegador div .paginaActiva {
+    background-color: #353434;
+    color: #d3e82b !important;  
+}
+
+.intro__cambio{
+    color: #d3e82b;
+    font-size: 40px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 20px black;
+}
+
+.intro__parrafo{
+    font-size: 19px;
+    font-weight: 500;
+    text-shadow: 2px 2px 20px black
+}
+
+a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none !important; 
+}
+
+a:hover{
+    color: white;
+}
+
+.boton-buy a{
+    color: #0e1016;
+}
+
+.boton-buy {
+    background-color: #d3e82b;
+    color: #0e1016;
+}
+
+.intro__inscribirme{
+    margin-top: 60px;
+}
+
+.intro__inscribirme a{
+    background-color: #d3e82b;
+    color: black;
+    padding: 12px 30px 12px 30px;
+    border-radius: 3px;
+}
+.intro__inscribirme a:hover{
+    background-color: #252525;
+    color: #d3e82b;
+    border: 1px solid  #d3e82b;
+}
+
+.copyright{
+    color: grey;
+}
+
+.tablaplanes{
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 3px solid #d3e82b;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color:white;
+    font-size: 16px;
+    resize: none;
+}
+
+select {
+    width: 50%;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+.contacto{
+    margin-left: 25%;
+    margin-right: 25%;
+    border:none;
+}
+
+.tablaStaff{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+}
+h3{
+    font-size: 16px;
+}
+h4 {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.tablaStaff__item__nombre{
+    color: #d3e82b;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tablaStaff__item{
+    margin: 1%;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #252525;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tablaStaff__item__img{
+   margin-left: 0px;
+   height: 100%;
+}
+
+.tablaStaff__item__skill{
+    margin-left: 10%;
+    margin-top: 11%;
+    font-size: 15px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #d3e82b;
+    border: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 14px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: left;
+}
+
+.formulario{
+    background-color: #1c1c1e;
+    border-radius: 4px;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+
+.planbasico{
+    background-color: #252525;
+    padding: 15px;
+    justify-content: center;
+}
+
+.planpremium{
+    padding: 30px;
+    justify-content: center;
+}
+
+.centrado{
+    text-align: center;
+}
+
+
+.contenedorfotos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.imagen{
+    height: 600px;
+}
+.resize{
+    width: 200px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.resize:hover{
+    width: 600px;
+    object-fit: none;
+}
+
+.videoyoutube{
+    margin: 20px;
+}
+
+.contenedorTabla{
+    display: flex;
+    justify-content: center;
+}
+.contenedorTabla__planes{
+    display: grid;
+    width: 670px;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "plan1 plan2 plan3"
+        ". plan2 ."
+        ". plan2 ."
+        "contacto contacto contacto";
+    grid-template-columns: 4fr 5fr 4fr;
+    grid-template-rows: 50px 300px 50px 25px 50px;
+    grid-gap: 10px; 
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+.contenedorTabla__planes__box1{
+    grid-area: titulo;
+    background-color: #252525;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenedorTabla__planes__box2{
+    grid-area: plan1;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    grid-row-gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contenedorTabla__planes__box2 div{
+    background-color: #252525;
+}
+
+.contenedorTabla__planes__box3{
+    grid-area: plan2;
+    display: grid;
+    grid-template-rows: 50px auto 50px 25px;
+    grid-row-gap: 10px;
+}
+.contenedorTabla__planes__box3 div{
+    background-color: #252525;
+    border: 1px dotted #d3e82b;
+}
+.colorpro{
+    color: #d3e82b;
+}
+
+.contenedorTabla__planes__box4{
+    grid-area: plan3;
+    display: grid;
+    grid-template-rows: 50px auto 50px;
+    grid-row-gap: 10px;
+}
+.contenedorTabla__planes__box4 div{
+    background-color: #252525;
+}
+.contenedorTabla__planes__box5{
+    grid-area: contacto;
+    background-color: #252525;
+}
+
+.contenedorTabla__planes div.boton-buy{
+    background-color: #d3e82b;
+    color: #0e1016;
+}
+
+.contenedorTabla__planes div.boton-buy:hover{
+    background-color: #93a123;
+    color: #d3e82b;
+    border: 1px solid  #d3e82b;
+}
+.contenedorTabla__planes div.boton-buy a:hover{
+    /*color: #d3e82b;*/
+}
+
+.contenedorTabla__planes ul{
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.contenedorTabla__planes li{
+    padding-top: 15px;
+}
+
+@media (max-width: 600px) {
+    .contenedorTabla__planes  {
+        grid-template-rows: auto;
+        grid-row-gap: 30px;
+      grid-template-areas: 
+      "titulo titulo titulo"
+      "plan1 plan1 plan1"
+      "plan3 plan3 plan3"
+      "plan2 plan2 plan2"
+      "contacto contacto contacto"
+    }
+    .contenedorTabla__planes__box2{
+        grid-row-gap: 3px;
+        border-radius: 5px;
+    }
+    .contenedorTabla__planes__box3{
+        grid-row-gap: 3px;
+    }
+    .contenedorTabla__planes__box4{
+        grid-row-gap: 3px;
+    }
+    .contenedorTabla__planes div.boton-buy{
+    border-radius: 0 0 4px 4px;
+    }
+    .contenedorTabla__planes li {
+        padding-bottom: 15px;
+    }
+}

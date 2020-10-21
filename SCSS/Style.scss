@@ -1,0 +1,336 @@
+/*VARIABLES*/
+$color-mediafit: #d3e82b;
+$sombra-box: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$background-items: #252525;
+
+@mixin img-fondo {
+    padding: 1%;
+    background-repeat: space;
+    background-attachment: fixed;
+}
+
+
+body{
+    background-color: #0f1015;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    margin: 0;
+}
+
+#contenedor-total{
+    position: relative;
+    min-height: 100vh;
+}
+
+/*NAV BAR*/
+header{
+    background-color: #1a1919;
+    padding-top: 0.5rem;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    nav{
+        background-color: #1a1919;
+        box-shadow: $sombra-box;
+        .logo{
+            position: absolute;
+                img{
+                    margin-top: 3%;
+                    margin-left: 20%;}            
+        }
+        #navegador{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-right: 2%;
+            div{
+                .paginaActiva {
+                    background-color: #353434;
+                    color: $color-mediafit !important;}
+                a{
+                    display: block;
+                    padding: 10px;
+                    font-weight: 600;}
+                    :hover{
+                        background-color: #242424;
+                        color: white;
+                        text-decoration: none;}      
+            }
+        }
+    }
+}
+
+main{
+    text-align: center;
+    padding-bottom: 20px;}
+.fondo__index{
+    background-image: url(../Imagenes/wallpaperbetter.com_1920x1080.jpg);
+    @include img-fondo;}
+.fondo__staff{
+    background-image: url(../Imagenes/Fondo-gimnasio.jpg);
+    @include img-fondo;}
+.fondo__planes{
+    background-image: url(../Imagenes/Fondos.jpg);
+    @include img-fondo;}  
+
+/*INDEX*/
+.intro{
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    margin-left: 50%;
+    text-align: left;
+    .intro__cambio{
+        color: $color-mediafit;
+        font-size: 40px;
+        font-weight: bolder;
+        text-shadow: 2px 2px 20px black;}
+        .intro__parrafo{
+            font-size: 19px;
+            font-weight: 500;
+            text-shadow: 2px 2px 20px black}   
+    .intro__inscribirme{
+        margin-top: 60px;
+        a{
+            background-color: $color-mediafit;
+            color: black;
+            padding: 12px 30px 12px 30px;
+            border-radius: 3px;}
+            :hover{
+                background-color: $background-items;
+                color: $color-mediafit;
+                border: 1px solid  $color-mediafit;}
+        }
+}
+
+/*STAFF*/
+.tablaStaff{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    .tablaStaff__item{
+        margin: 1%;
+        width: 600px;
+        height: 250px;
+        display: flex;
+        align-items: flex-start;
+        background-color: $background-items;
+        border-radius: 5px;
+        box-shadow: $sombra-box;}
+        .tablaStaff__item__img{
+            margin-left: 0px;
+            height: 100%;}
+        .tablaStaff__item__nombre{
+            color: $color-mediafit;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .tablaStaff__item__skill{
+            margin-left: 10%;
+            margin-top: 11%;
+            font-size: 15px;}
+}
+
+/*GIMNASIO*/
+
+.videoyoutube{
+    margin: 20px;
+}
+
+/*PLANES*/
+
+.contenedorTabla{
+    display: flex;
+    justify-content: center;
+    .contenedorTabla__planes{
+        display: grid;
+        width: 670px;
+        grid-template-areas: 
+            "titulo titulo titulo"
+            "plan1 plan2 plan3"
+            ". plan2 ."
+            ". plan2 ."
+            "contacto contacto contacto";
+        grid-template-columns: 4fr 5fr 4fr;
+        grid-template-rows: 50px 300px 50px 25px 50px;
+        grid-gap: 10px; 
+        padding: 10px;
+        justify-content: center;
+        align-content: center;}
+        ul{
+            margin-top: 15px;
+            font-size: 14px;
+            margin-bottom: 15px;
+            li{
+                padding-top: 15px;}
+        }
+        div{
+            div{
+                .boton-buy{
+                    background-color: $color-mediafit;
+                    a{
+                        color: #0e1016;
+                        display: block}
+                    &:hover{
+                        background-color: #b9cc2c;
+                        color: $color-mediafit;}
+                        &:hover a{
+                            color: white;
+                        }
+                                           
+                }  
+            }                 
+        }  
+        .contenedorTabla__planes__box1{
+            grid-area: titulo;
+            background-color: $background-items;
+            box-shadow: $sombra-box;}
+        .contenedorTabla__planes__box2{
+            grid-area: plan1;
+            display: grid;
+            grid-template-rows: 50px auto 50px;
+            grid-row-gap: 10px;
+            div{
+                background-color: $background-items;}
+            }
+        .contenedorTabla__planes__box3{
+            grid-area: plan2;
+            display: grid;
+            grid-template-rows: 50px auto 50px 25px;
+            grid-row-gap: 10px;
+            div{
+                background-color: $background-items;
+                border: 1px dotted $color-mediafit;}
+            }
+        .contenedorTabla__planes__box4{
+            grid-area: plan3;
+            display: grid;
+            grid-template-rows: 50px auto 50px;
+            grid-row-gap: 10px;
+            div{
+                background-color: $background-items;}
+            }
+        .contenedorTabla__planes__box5{
+            grid-area: contacto;
+            background-color: $background-items;}
+            }                         
+            .colorpro{
+                color: $color-mediafit;
+            }        
+        
+/*CONTACTO*/
+
+
+
+/*FOOTER*/
+footer{
+    background-color: #1a1919;
+    font-size: 13px;
+    font-weight: lighter;
+    bottom: 0;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding: 10px;}
+    .footer__menu{
+        padding: 1rem;
+    }
+    .footer__link{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer__link{
+        a{
+            font-weight: 500;}
+            :hover{
+                color: #757474;}
+    }
+    .copyright{
+        color: grey;
+    }
+
+ul{
+    list-style-type: none;
+    display: inline;    
+}
+
+a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none !important; 
+    :hover{
+        color: white;
+    }
+}
+
+.titulos{
+    color: $color-mediafit;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 16px;
+}
+h4 {
+    color: white;
+    font-weight: lighter;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+h5{
+    font-size: 13px;
+    font-weight: 600;
+    color: $color-mediafit;
+    margin-top: 0%;
+    margin-block-end: 1.67em;
+}
+
+
+
+@media (max-width: 600px) {
+    
+    /*PLANES*/
+    .contenedorTabla{
+        .contenedorTabla__planes{
+            grid-template-rows: auto;
+            grid-row-gap: 30px;
+        grid-template-areas: 
+        "titulo titulo titulo"
+        "plan1 plan1 plan1"
+        "plan3 plan3 plan3"
+        "plan2 plan2 plan2"
+        "contacto contacto contacto"
+        }
+            .contenedorTabla__planes__box2{
+                grid-row-gap: 3px;
+                border-radius: 5px;
+            }
+            .contenedorTabla__planes__box3{
+                grid-row-gap: 3px;
+            }
+            .contenedorTabla__planes__box4{
+                grid-row-gap: 3px;
+            }
+            .contenedorTabla__planes div.boton-buy{
+            border-radius: 0 0 4px 4px;
+            }
+            .contenedorTabla__planes li {
+                padding-bottom: 15px;
+            }
+    }
+}
