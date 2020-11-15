@@ -5,16 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Queremos que vengas a MediaFit! Tenes dudas? Envianos un mensaje">
         <meta name="keywords" content="GIMNASIO, ENTRENAR, NUTRICIONISTA, MUSCULO, ADELGAZAR, PESAS, RUNNING, CARDIOVASCULAR, SALUD, FISICO, ALIMENTACION"> 
-        <title>Contacto - MediaFit</title>  
+        <title>Contacto - MediaFit</title> 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../Css/estilos.css">
     </head> 
-    <body>        
+    <body>
         <div id="contenedor-total">
             <div id="contenido-pagina">
-                <header>                    
-                    <nav>
-                        <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>             
+                <header>
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu"><img src="../Imagenes/icono-menu.png" alt="">
+                    </label>
+                    <nav>                        
+                        <a href="index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>
                         <div id="navegador">
                             <div><a href="../index.html">Inicio</a></div>
                             <div><a href="staff.html">Staff</a></div>
@@ -24,60 +29,63 @@
                         </div>
                     </nav>
                 </header>
-                <main>
-                    <h1 class="titulos" id="contacto">CONTACTO</h1>
-                    <p>Envianos tu consulta y recibi una respuesta en el dia!</p>
-                    <div class="formulario">
+                <main class="fondo__contacto">
+                    <h1 class="titulos" id="contacto">CONTACTO</h1>                    
+                    <div class="formulario">                        
                         <form action="#" method="POST">
-                            <fieldset class="contacto">
-                                <label for="Nombre">Tu nombre:</label>
-                                <input type="text"  name="Nombre" placeholder="Nombre" id="Nombre"><br><br>
-
-                                <label for="correo">Tu email:</label>
-                                <input type="text"  name="correo" id="correo" placeholder="Dirección de Correo Electronico" required><br><br>
-                                
-                                <label for="asunto">Asunto</label>
-                                <select name="asunto" id="Asunto">
-                                    <option select disabled selected>Seleccionar asunto</option>
-                                    <option value="mas-informacion">Quiero informacion sobre los planes</option>
-                                    <option value="problema-pago">Problemas con mi pago</option>
-                                    <option value="Cancelar-suscripcion">Quiero darme de baja</option>
-                                    <option value="comentarios">Comentarios generales</option>
-                                    <option value="quejas">Libro de quejas</option>
-                                </select><br><br>
-
-                                <label for="comentario">Tu comentario</label>
-                                <textarea name="comentario" id="comentario" cols="30" rows="10">Mensaje</textarea><br><br>
-
-                                
-                                <label for="cliente">Soy cliente</label>
-                                <input type="radio" name="cliente" value="si">
-                                <label for="cliente">No soy cliente</label>
-                                <input type="radio" name="cliente" value="no"><br><br>
-
-                                <label for="pass">Contraseña</label>
-                                <input type="password" name="pass" id="pass"><br><br>
-
-                                <input type="reset" value="Reiniciar Formulario">
-
-                                <input type="submit" name="submit" value="Enviar">
-                            </fieldset>
-                        </form>
+                            <p>Envianos tu consulta y recibi una respuesta en el dia!</p>
+                            <div class="row">
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                                <div class="col">
+                                  <input type="text" class="form-control" placeholder="Apellido">
+                                </div>
+                              </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlInput1"></label>
+                              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Dirección de Correo Electronico">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleFormControlSelect1"></label>
+                              <select class="form-control" id="exampleFormControlSelect1">
+                                <option select disabled selected>Seleccionar asunto</option>
+                                <option value="mas-informacion">Quiero informacion sobre los planes</option>
+                                <option value="problema-pago">Problemas con mi pago</option>
+                                <option value="Cancelar-suscripcion">Quiero darme de baja</option>
+                                <option value="comentarios">Comentarios generales</option>
+                                <option value="quejas">Libro de quejas</option>
+                              </select>
+                            </div>                           
+                            <div class="form-group">
+                              <label for="exampleFormControlTextarea1"></label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Dejanos tu mensaje!</textarea>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                                  <label class="form-check-label" for="invalidCheck2">
+                                    Quiero recibir noticias y promociones
+                                  </label>
+                                </div>
+                              </div>
+                              <button class="btn btn-primary" type="submit">Enviar!</button>
+                          </form>
                     </div>
                 </main>
             </div>      
             <footer>
-                <div class="footer__menu">
+                <div class="footer__menu hidden">
                     <h5>Navegación</h5>
                     <div class="footer__link"> 
-                        <a href="index.html">Inicio</a>
-                        <a href="Paginas/staff.html">Staff</a>
-                        <a href="Paginas/gimnasio.html">Gimnasio</a>
-                        <a href="Paginas/planes.html">Planes</a>
-                        <a href="Paginas/contacto.html"> Contacto</a>
+                        <a href="../index.html">Inicio</a>
+                        <a href="staff.html">Staff</a>
+                        <a href="gimnasio.html">Gimnasio</a>
+                        <a href="planes.html">Planes</a>
+                        <a href="contacto.html"> Contacto</a>
                     </div>
                 </div>
-                <div class=footer__menu>
+                <div class="footer__menu hidden">
                     <h5>Redes</h5>
                     <div class="footer__link">   
                         <a href="https://www.facebook.com/">Facebook</a>
@@ -85,7 +93,15 @@
                         <a href="https://www.youtube.com/">Youtube</a>
                     </div>
                 </div>
-                <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                <div class="footer__menu">
+                <div>
+                    <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde-small.png" alt="Foto del logo"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                </div>
+                </div>
             </footer>
         </div>
     </body>

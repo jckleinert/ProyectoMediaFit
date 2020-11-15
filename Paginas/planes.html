@@ -7,14 +7,18 @@
         <meta name="keywords" content="GIMNASIO, ENTRENAR, NUTRICIONISTA, MUSCULO, ADELGAZAR, PESAS, RUNNING, CARDIOVASCULAR, SALUD, FISICO, ALIMENTACION"> 
         <title>Planes - MediaFit</title>  
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../Css/estilos.css">
     </head> 
-    <body>        
+    <body>
         <div id="contenedor-total">
             <div id="contenido-pagina">
-                <header>                    
-                    <nav>
-                        <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>             
+                <header>
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu"><img src="../Imagenes/icono-menu.png" alt="">
+                    </label>
+                    <nav>                        
+                        <a href="index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>
                         <div id="navegador">
                             <div><a href="../index.html">Inicio</a></div>
                             <div><a href="staff.html">Staff</a></div>
@@ -44,7 +48,7 @@
                                     </ul>
                                 </div>
                                 <div class="item8 boton-buy">
-                                    <h3><a href="">Inscribirme</a></h3>
+                                    <h3><a href="#">Inscribirme</a></h3>
                                 </div>
                             </div> 
 
@@ -62,7 +66,7 @@
                                     </ul>
                                 </div>
                                 <div class="item9 boton-buy">
-                                    <a href=""><h3>Inscribirme</h3></a>
+                                    <a href="#"><h3>Inscribirme</h3></a>
                                 </div>
                             </div>
 
@@ -78,7 +82,7 @@
                                     </ul>
                                 </div>                           
                                 <div class="item10 boton-buy">
-                                    <a href=""><h3>Inscribirme</h3></a>
+                                    <a href="#"><h3>Inscribirme</h3></a>
                                 </div>
                             </div>
 
@@ -89,20 +93,21 @@
                             </div>
                           </div>                        
                     </section>
+                    <h3><a href="staff.html">Conocer a los profesionales de MediaFit</a></h3>
                 </main>
             </div>      
             <footer>
-                <div class="footer__menu">
+                <div class="footer__menu hidden">
                     <h5>Navegación</h5>
                     <div class="footer__link"> 
-                        <a href="index.html">Inicio</a>
-                        <a href="Paginas/staff.html">Staff</a>
-                        <a href="Paginas/gimnasio.html">Gimnasio</a>
-                        <a href="Paginas/planes.html">Planes</a>
-                        <a href="Paginas/contacto.html"> Contacto</a>
+                        <a href="../index.html">Inicio</a>
+                        <a href="staff.html">Staff</a>
+                        <a href="gimnasio.html">Gimnasio</a>
+                        <a href="planes.html">Planes</a>
+                        <a href="contacto.html"> Contacto</a>
                     </div>
                 </div>
-                <div class=footer__menu>
+                <div class="footer__menu hidden">
                     <h5>Redes</h5>
                     <div class="footer__link">   
                         <a href="https://www.facebook.com/">Facebook</a>
@@ -110,7 +115,15 @@
                         <a href="https://www.youtube.com/">Youtube</a>
                     </div>
                 </div>
-                <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                <div class="footer__menu">
+                <div>
+                    <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde-small.png" alt="Foto del logo"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                </div>
+                </div>
             </footer>
         </div>
     </body>

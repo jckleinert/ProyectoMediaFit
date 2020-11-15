@@ -12,14 +12,18 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="../Css/estilos.css">
     </head> 
-    <body>        
+    <body>
         <div id="contenedor-total">
             <div id="contenido-pagina">
-                <header>                    
-                    <nav>
-                        <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>             
+                <header>
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu"><img src="../Imagenes/icono-menu.png" alt="">
+                    </label>
+                    <nav>                        
+                        <a href="index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde.png" alt="Foto del logo"></a>
                         <div id="navegador">
                             <div><a href="../index.html">Inicio</a></div>
                             <div><a href="staff.html">Staff</a></div>
@@ -29,9 +33,9 @@
                         </div>
                     </nav>
                 </header>                
-                <main>            
+                <main class="fondo__gimnasio">            
                     <h1 class="titulos" id="gimnasio">GIMNASIO</h1>
-
+                    <p>Conocé nuestro centro de entrenamiento.</p>
                     <div class="container-fluid">
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
@@ -57,40 +61,40 @@
                             </a>
                         </div>
                     </div>
-
-                    <!--
-                    <div class="galeriafotos">
-                        <div class="contenedorfotos">
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Bar.jpg" alt="Foto del bar" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Bar2.jpg" alt="Foto del bar2" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Bar3.jpg" alt="Foto del bar3" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Bar4.jpg" alt="Foto del bar4" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Gimnasio.jpg" alt="Foto del gimnasio" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Gimnasio2.jpg" alt="Foto del gimnasio2" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Vestuarioi.jpg" alt="Foto del vestuario" class="imagen"></div>
-                            <div class="resize"><img src="../Imagenes/Imagenes gimnasio/Vestuarioi2.jpg" alt="Foto del vestuario2" class="imagen"></div>                        
-                        </div>
-                    </div>
-                    -->
                     <div class="videoyoutube">
-                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/ayoGikYREDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe class="videoGim" src="https://www.youtube.com/embed/ayoGikYREDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="infoVideo">
+                            <h2>Conocé nuestro complejo</h2>
+                            <p>Equipado con la última tecnologia</p>
+                            <p>Salas de musculación, salones para clases, consultorio medico y mucho más</p>
+                        </div>                        
+                    </div>
+
+                    <div class="sedeDireccion">                       
+                        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.5669609110615!2d-58.45786907076024!3d-34.54677319416055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4242acb9f8b%3A0xcc5141bd2bf9aa09!2sAv.%20del%20Libertador%207200%2C%20C1429BMS%20CABA!5e0!3m2!1ses!2sar!4v1605395210636!5m2!1ses!2sar" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>                     
+                        <div class="infoMapa">
+                            <h2> Visitá nuestra sede principal</h2>
+                            <p>Av Libertador 3443, CABA</p>
+                            <p>Abierto Lunes a Sabados de 8 a 24hs</p>
+                        </div>
+                                               
                     </div>
                     
                     <h3><a href="planes.html">Conocer planes en MediaFit</a></h3>
                 </main>
             </div>      
             <footer>
-                <div class="footer__menu">
+                <div class="footer__menu hidden">
                     <h5>Navegación</h5>
                     <div class="footer__link"> 
-                        <a href="index.html">Inicio</a>
-                        <a href="Paginas/staff.html">Staff</a>
-                        <a href="Paginas/gimnasio.html">Gimnasio</a>
-                        <a href="Paginas/planes.html">Planes</a>
-                        <a href="Paginas/contacto.html"> Contacto</a>
+                        <a href="../index.html">Inicio</a>
+                        <a href="staff.html">Staff</a>
+                        <a href="gimnasio.html">Gimnasio</a>
+                        <a href="planes.html">Planes</a>
+                        <a href="contacto.html"> Contacto</a>
                     </div>
                 </div>
-                <div class=footer__menu>
+                <div class="footer__menu hidden">
                     <h5>Redes</h5>
                     <div class="footer__link">   
                         <a href="https://www.facebook.com/">Facebook</a>
@@ -98,7 +102,15 @@
                         <a href="https://www.youtube.com/">Youtube</a>
                     </div>
                 </div>
-                <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                <div class="footer__menu">
+                <div>
+                    <a href="../index.html" class="logo"><img src="../Imagenes/MEDIA-FIT-LOGO-baja-verde-small.png" alt="Foto del logo"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                    <p class="copyright">©MediaFit. Todos los derechos reservados.</p>
+                </div>
+                </div>
             </footer>
         </div>
     </body>
